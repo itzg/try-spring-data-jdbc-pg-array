@@ -8,4 +8,7 @@ import java.util.List;
 public interface NotebookRepository extends CrudRepository<Notebook, Long> {
     @Query("SELECT * FROM notebook WHERE :color = ANY(colors)")
     List<Notebook> findByColor(String color);
+
+    @Query("SELECT DISTINCT unnest(colors) FROM notebook")
+    List<String> findDistinctColors();
 }
