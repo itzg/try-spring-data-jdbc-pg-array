@@ -21,4 +21,12 @@ databaseChangeLog:
                   name: colors
                   type: text[]
             tableName: notebook
+        - createIndex:
+            indexName: idx_notebook_colors
+            tableName: notebook
+            # noinspection YAMLSchemaValidation
+            using: gin
+            columns:
+              - column:
+                  name: colors
 
