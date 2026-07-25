@@ -10,7 +10,7 @@
 
 ## Try it out
 
-Execute the unit tests, specifically `[TrySpringDataJdbcPgArrayApplicationTests.java](src/test/java/app/TrySpringDataJdbcPgArrayApplicationTests.java)`
+Execute the unit tests, specifically [TrySpringDataJdbcPgArrayApplicationTests.java](src/test/java/app/TrySpringDataJdbcPgArrayApplicationTests.java)
 
 ```shell
 ./gradlew test
